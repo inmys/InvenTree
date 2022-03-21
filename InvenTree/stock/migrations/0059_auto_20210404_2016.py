@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='stockitem',
             name='delete_on_deplete',
-            field=models.BooleanField(default=True, help_text='Delete this Stock Item when stock is depleted', verbose_name='Delete on deplete'),
+            field=models.BooleanField(default=False, help_text='Delete this Stock Item when stock is depleted', verbose_name='Delete on deplete'),
         ),
         migrations.AlterField(
             model_name='stockitem',

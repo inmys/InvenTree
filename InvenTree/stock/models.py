@@ -691,7 +691,7 @@ class StockItem(MPTTModel):
 
     review_needed = models.BooleanField(default=False)
 
-    delete_on_deplete = models.BooleanField(default=True, verbose_name=_('Delete on deplete'), help_text=_('Delete this Stock Item when stock is depleted'))
+    delete_on_deplete = models.BooleanField(default=False, verbose_name=_('Delete on deplete'), help_text=_('Delete this Stock Item when stock is depleted'))
 
     status = models.PositiveIntegerField(
         default=StockStatus.OK,
